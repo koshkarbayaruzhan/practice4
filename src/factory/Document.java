@@ -1,4 +1,5 @@
 package factory;
 
-public class Document {
+public interface Document {
+    void open();
 }
