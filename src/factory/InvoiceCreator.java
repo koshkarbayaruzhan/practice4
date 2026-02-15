@@ -1,4 +1,8 @@
 package factory;
 
-public class InvoiceCreator {
+public class InvoiceCreator extends DocumentCreator {
+    @Override
+    public Document createDocument() {
+        return new Invoice();
+    }
 }
