@@ -1,8 +1,8 @@
 package factory;
 
-public class Report implements Document {
+public class ReportCreator extends DocumentCreator {
     @Override
-    public void open() {
-        System.out.println("Открыт отчет");
+    public Document createDocument() {
+        return new Report();
     }
 }
